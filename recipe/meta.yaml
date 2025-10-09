@@ -1,5 +1,5 @@
 {% set name = "hussh" %}
-{% set version = "0.1.8" %}
+{% set version = "0.1.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hussh-{{ version }}.tar.gz
-  sha256: 3cd93070cc4d7865c17f3ec43f6cc62ff4fecc943b9acc13df798f6e96706494
+  sha256: 1aa73a1dc776a4a7095a7d6050fe49f7f6c7b120e2d062f6477a56d12992628e
 
 build:
   skip: true  # [py<38]
