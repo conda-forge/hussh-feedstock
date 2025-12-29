@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: hussh
-  version: "0.2.0"
+  version: "0.2.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/hussh-${{ version }}.tar.gz
-  sha256: 17dd0ee91b20ab1b3ac8f25de725df38052e186ce97264b80997c6ca2ddabfac
+  sha256: 5cec67a0df5eeba96e5d5d05703e8509178f69fd2fafba0247aebd493f5d75a0
 
 build:
   number: 0
