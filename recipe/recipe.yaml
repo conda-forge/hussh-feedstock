@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: hussh
-  version: "0.3.3"
+  version: "0.4.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/hussh-${{ version }}.tar.gz
-  sha256: 2e181a8a8922fcae95b18b4cc1fb3e25e54adc2d036e0be2d8a0bb17a0ffd8c1
+  sha256: ab31d3e6ff85d8d6d73fa25c8c71e7ab47e5cda8ebc89f71bc7706cc7825c4e1
 
 build:
-  number: 1
+  number: 0
   script:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
     - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
